@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpg_v2.Controller_HealerPage">
+   <children>
+      <ImageView fitHeight="850.0" fitWidth="1218.0">
+         <image>
+            <Image url="@RPG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="retourButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHerosPage" prefHeight="48.0" prefWidth="136.0" style="-fx-background-color: #C4E4FF;" text="Retour">
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+         <font>
+            <Font name="Coolsville Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="174.0" layoutY="687.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="252.0" style="-fx-background-color: #C4E4FF;" text="See Battle Caracteristics">
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+         <font>
+            <Font name="Coolsville Regular" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="393.0" layoutY="14.0" prefHeight="96.0" prefWidth="433.0" text="The Healer" textFill="WHITE">
+         <font>
+            <Font name="Coolsville Regular" size="65.0" />
+         </font>
+      </Label>
+      <Text fill="#ff00ee" layoutX="596.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A hero healer in a game is usually a character who has the ability to heal other characters in the game. They are often important characters for the team, as they can help them stay healthy and alive during difficult battles" textAlignment="JUSTIFY" wrappingWidth="499.879638671875">
+         <font>
+            <Font name="Coolsville Regular" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="614.0" fitWidth="399.0" layoutX="101.0" layoutY="85.0">
+         <image>
+            <Image url="@Healer.png" />
+         </image>
+         <effect>
+            <DropShadow radius="23.19" width="73.76">
+               <color>
+                  <Color red="1.0" blue="0.8999999761581421" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

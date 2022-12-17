@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpg_v2.Controller_HerosPage">
+   <children>
+      <ImageView fitHeight="850.0" fitWidth="1218.0">
+         <image>
+            <Image url="@RPG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="hunterButton" layoutX="477.0" layoutY="126.0" mnemonicParsing="false" onAction="#goHunterPage" prefHeight="120.0" prefWidth="285.0" style="-fx-background-color: #C4E4FF;" text="Hunter">
+         <font>
+            <Font name="Coolsville Regular" size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+      </Button>
+      <Button fx:id="warriorButton" layoutX="477.0" layoutY="296.0" mnemonicParsing="false" onAction="#goWarriorPage" prefHeight="120.0" prefWidth="285.0" style="-fx-background-color: #C4E4FF;" text="Warrior">
+         <font>
+            <Font name="Coolsville Regular" size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+      </Button>
+      <Button fx:id="healerButton" layoutX="477.0" layoutY="636.0" mnemonicParsing="false" onAction="#goHealerPage" prefHeight="120.0" prefWidth="285.0" style="-fx-background-color: #C4E4FF;" text="Healer">
+         <font>
+            <Font name="Coolsville Regular" size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+      </Button>
+      <Button fx:id="mageButton" layoutX="477.0" layoutY="462.0" mnemonicParsing="false" onAction="#goMagePage" prefHeight="120.0" prefWidth="285.0" style="-fx-background-color: #C4E4FF;" text="Mage">
+         <font>
+            <Font name="Coolsville Regular" size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+      </Button>
+      <Button fx:id="menuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goMenuPage" prefHeight="48.0" prefWidth="136.0" style="-fx-background-color: #C4E4FF;" text="Menu">
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+         <font>
+            <Font name="Coolsville Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

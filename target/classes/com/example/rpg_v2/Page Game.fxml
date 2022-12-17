@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpg_v2.Controller_GamePage">
+   <children>
+      <ImageView fitHeight="850.0" fitWidth="1218.0">
+         <image>
+            <Image url="@RPG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goMenuPage" prefHeight="48.0" prefWidth="136.0" style="-fx-background-color: #C4E4FF;" text="Menu">
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+         <font>
+            <Font name="Coolsville Regular" size="15.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="248.0" layoutY="57.0" prefHeight="586.0" prefWidth="723.0" promptText="Dans ce jeu vidéo de rpg, les joueurs incarnent des héros qui se battent contre des monstres imaginaires dans un univers fantastique. Le monde est menacé par une armée de créatures maléfiques, et c'est aux joueurs de sauver la situation en affrontant les monstres et en les vainquant.Les joueurs peuvent choisir parmi plusieurs classes de personnages, chacune avec ses propres compétences et aptitudes. Par exemple, il y a des guerriers puissants, des archers habiles, des mages puissants et des voleurs rusés. Chaque classe de personnage a ses propres forces et faiblesses, et il appartient aux joueurs de choisir celle qui convient le mieux à leur style de jeu.">
+         <font>
+            <Font name="Coolsville Regular" size="25.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="startButton" layoutX="521.0" layoutY="679.0" mnemonicParsing="false" onAction="#goStartGamePage" prefHeight="75.0" prefWidth="176.0" style="-fx-background-color: #C4E4FF;" text="Start the Game">
+         <effect>
+            <InnerShadow choke="0.18" />
+         </effect>
+         <font>
+            <Font name="Coolsville Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
